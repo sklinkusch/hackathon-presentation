@@ -1,0 +1,90 @@
+\begin{textblock}{27.5}(0,1)
+\psframe[linestyle=none,fillstyle=solid,fillcolor=blendedblue](0,1.0)(27.5,-1.0)
+
+\vspace{-6mm}
+\begin{center}
+{\huge \white \sf Capabilities: theory vs. experiment}
+\end{center}
+\end{textblock}
+
+\begin{textblock}{12.5}(0,4)
+    \begin{Large}
+	\begin{itemize}
+	    \item theory: each arbitrary laser pulse
+	    \item populations of eigenstates: \\ $\mathbf{P_n (t)} = \boldsymbol{\braket{\Phi_n}{\Psi (t)}}$
+	    \item direct measurement of population dynamics impossible
+	    \item pump-probe experiments are performed
+	\end{itemize}
+    \end{Large}
+\end{textblock}
+
+\begin{textblock}{12.5}(13,2.5)
+    \begin{psmatrix}[rowsep=1.0,colsep=0.5]
+	\psframebox[linecolor=black,linewidth=2pt,fillstyle=none]{
+	    \begin{tabular}{c}
+	    \Large molecular system \\
+	    \Large (ground state or \\ 
+	    \Large thermal ensemble) \\
+	\end{tabular}
+	}%
+	\\
+	\psdiabox[linecolor=red,linewidth=2pt,fillstyle=solid,fillcolor=yellow]{
+	    \Large \textcolor{red}{pump pulse}
+	}%
+	&{}%
+	&{}%
+	\\
+	\psframebox[linecolor=black,linewidth=2pt,fillstyle=none]{
+	    \begin{tabular}{c}
+	    \Large molecular system \\
+	    \Large (excited, wave packet) \\
+	\end{tabular}
+	}%
+	&%
+	\psovalbox[linecolor=black,linewidth=2pt,fillstyle=solid,fillcolor=blendedblue]{
+	    \begin{tabular}{c}
+	    \Large \textcolor{white}{delay time} \\
+	    \Large \textcolor{white}{(relaxation)} \\
+	\end{tabular}
+	}%
+	\\%
+	\psdiabox[linecolor=red,linewidth=2pt,fillstyle=solid,fillcolor=yellow]{
+	    \Large \textcolor{red}{probe pulse}
+	}%
+	&{}%
+	&{}%
+	\\%
+	\psframebox[linecolor=black,linewidth=2pt,fillstyle=solid,fillcolor=red]{
+	    \begin{tabular}{c}
+	    \Large \textcolor{yellow}{free electrons} \\
+	    \Large \textcolor{yellow}{(with kinetic energy)} \\
+	\end{tabular}
+	}%
+	&%
+	\psframebox[linecolor=black,linewidth=2pt,fillstyle=none]{
+	    \Large molecular cations
+	}%
+	\\%
+	\psovalbox[linecolor=black,linewidth=2pt,fillstyle=solid,fillcolor=blue]{
+	    \Large \textcolor{white}{analysis (MS)}
+	}%
+    \end{psmatrix}
+    \psset{arrowscale=2}
+    \ncline[linecolor=black, linewidth=2pt]{1,1}{2,1}
+    \ncline[linecolor=black, linewidth=2pt]{->}{2,1}{3,1}
+    \ncline[linecolor=black, linewidth=2pt]{3,1}{4,1}
+    \ncline[linecolor=black, linewidth=2pt]{->}{4,1}{5,1}
+    \ncline[linecolor=black, linewidth=2pt, nodesepA=-9.5pt]{->}{4,1}{5,2}
+    \ncline[linecolor=black, linewidth=1pt]{2,1}{2,3}
+    \ncline[linecolor=black, linewidth=1pt]{4,1}{4,3}
+    \ncline[linecolor=blendedblue, linewidth=2pt]{->}{3,2}{2,2}
+    \ncline[linecolor=blendedblue, linewidth=2pt]{->}{3,2}{4,2}
+    \ncline[linecolor=black, linewidth=2pt]{->}{5,1}{6,1}
+\end{textblock}
+
+\begin{textblock}{12.5}(0.5,14)
+    \begin{LARGE}
+    \textcolor{red}{\bfseries Simulation of pump-probe spectra}
+    \end{LARGE}
+\end{textblock}
+\ \newpage
