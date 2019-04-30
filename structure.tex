@@ -1,0 +1,65 @@
+\begin{textblock}{27.5}(0,1)
+\psframe[linestyle=none,fillstyle=solid,fillcolor=dgreen](0,1.0)(27.5,-1.0)
+
+\vspace{-6mm}
+\begin{center}
+{\huge \white \sf Flow structure and techniques}
+\end{center}
+\end{textblock}
+
+
+\begin{textblock}{12.5}(1,4.5)
+    \begin{psmatrix}[rowsep=1.5,colsep=1.5]
+	\psframebox[linecolor=black,linewidth=2pt,fillstyle=none]{
+	    \begin{tabular}{c}
+	    \textcolor{red}{\Large \bfseries{Landing page}} \\
+	\end{tabular}
+	}%
+        &%
+        \psframebox[linecolor=black,linewidth=2pt,fillstyle=none]{
+        \begin{tabular}{c}
+         \Large about us \\
+        \end{tabular}
+        }%
+	\\
+	\psframebox[linecolor=black,linewidth=2pt,fillstyle=none]{
+	    \begin{tabular}{c}
+	    \Large info pages \\
+	\end{tabular}
+	}%
+        &%
+        \psframebox[linecolor=black,linewidth=2pt,fillstyle=none]{
+            \begin{tabular}{c}
+            \Large our mission \\
+            \end{tabular}
+        }%
+    \end{psmatrix}
+    \psset{arrowscale=2}
+    \ncline[linecolor=black, linewidth=2pt]{->}{1,1}{2,1}
+    \ncline[linecolor=black, linewidth=2pt]{->}{1,1}{1,2}
+    \ncline[linecolor=black, linewidth=2pt]{->}{1,1}{2,2}
+    \ncline[linecolor=black, linewidth=2pt]{->}{2,1}{1,2}
+    \ncline[linecolor=black, linewidth=2pt]{->}{2,1}{2,2}
+    \ncline[linecolor=black, linewidth=2pt]{<->}{1,2}{2,2}
+\end{textblock}
+
+\begin{textblock}{25.5}(1,12)
+\psframe[linestyle=none,fillstyle=none](0,1.0)(27.5,0.0)
+\begin{itemize}
+\item \Large way from landing page to information should not be too long
+\item \Large not too many links on landing page
+\item \Large not too much scrolling (keep it as simple as possible)
+\end{itemize}
+\end{textblock}
+
+\begin{textblock}{12.5}(14,4.5)
+\psframe[linestyle=none,fillstyle=none](0,1.0)(27.5,0.0)
+\begin{itemize}
+\item \Large HTML
+\item \Large CSS
+\item \Large JavaScript
+\item \Large React.js
+\item \Large Git
+\end{itemize}
+\end{textblock}
+\ \newpage
